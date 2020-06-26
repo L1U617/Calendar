@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <TextView android:id="@+id/coursename"
+    android:id="@+id/event"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/textview_uncomplete">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/textview_time">
+            <TextView
+                android:id="@+id/eventdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="5dp"
+                android:text="date"
+                android:textColor="#01341d"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/eventtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:textColor="#01341d"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/complete_btn"
+            android:background="@drawable/btn_view"
+            android:minHeight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="13sp"
+            android:text="Complete"
+            android:textColor="#01341d"/>
+
+    </LinearLayout>
+
+
+    <TextView android:id="@+id/eventname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#FF7300"
-        android:textSize="16sp" />
-    <TextView android:id="@+id/teachers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#000000"
-        android:textSize="13sp" />
+        android:paddingLeft="10dp"
+        android:textColor="#01341d"
+        android:textSize="20sp"
+        android:fontFamily="@font/comic"
+        android:text="test"/>
+
 </LinearLayout>
